@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06CFCA3C7BF158E4E8904948 /* Pods_FirebasexCombineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBB69A3E5CCDB8AD252BDE3 /* Pods_FirebasexCombineTests.framework */; };
+		3431CF5326A66CDC00F8F571 /* FirebasexCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF5226A66CDC00F8F571 /* FirebasexCombineApp.swift */; };
+		3431CF5726A66CED00F8F571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3431CF5626A66CED00F8F571 /* Assets.xcassets */; };
+		3431CF5A26A66CED00F8F571 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3431CF5926A66CED00F8F571 /* Preview Assets.xcassets */; };
+		3431CF6526A66CEE00F8F571 /* FirebasexCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF6426A66CEE00F8F571 /* FirebasexCombineTests.swift */; };
+		3431CF7026A66CEE00F8F571 /* FirebasexCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF6F26A66CEE00F8F571 /* FirebasexCombineUITests.swift */; };
+		3431CF7E26A672DF00F8F571 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF7D26A672DF00F8F571 /* ListView.swift */; };
+		3431CF8226A67A6100F8F571 /* SubjectBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF8126A67A6100F8F571 /* SubjectBinding.swift */; };
+		3431CF8526A67AAF00F8F571 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF8426A67AAF00F8F571 /* BaseViewModel.swift */; };
+		3431CF8726A68D4F00F8F571 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431CF8626A68D4F00F8F571 /* ListCell.swift */; };
+		3493D19D26A6E4910078D932 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3493D19C26A6E4910078D932 /* Note.swift */; };
+		34B0562D26A708C000DF33E9 /* FireBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0562C26A708C000DF33E9 /* FireBaseService.swift */; };
+		34B0563026A70A1B00DF33E9 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0562F26A70A1B00DF33E9 /* NoteRepository.swift */; };
+		34B0563226A7210700DF33E9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0563126A7210700DF33E9 /* ListViewModel.swift */; };
+		34B0563426A7212F00DF33E9 /* ListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0563326A7212F00DF33E9 /* ListUseCase.swift */; };
+		34F8BF5B26A6D2CA003165E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34F8BF5A26A6D2CA003165E0 /* GoogleService-Info.plist */; };
+		6A8F6E07B93D7CBE6557D1B2 /* Pods_FirebasexCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600D5CF23C410AD8579A730D /* Pods_FirebasexCombine.framework */; };
+		C3B2DD37439A57DB9563C19E /* Pods_FirebasexCombine_FirebasexCombineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7858E3C1A3A840B7CA13FD /* Pods_FirebasexCombine_FirebasexCombineUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3431CF6126A66CEE00F8F571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3431CF4726A66CDC00F8F571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3431CF4E26A66CDC00F8F571;
+			remoteInfo = FirebasexCombine;
+		};
+		3431CF6C26A66CEE00F8F571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3431CF4726A66CDC00F8F571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3431CF4E26A66CDC00F8F571;
+			remoteInfo = FirebasexCombine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BBB69A3E5CCDB8AD252BDE3 /* Pods_FirebasexCombineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebasexCombineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3431CF4F26A66CDC00F8F571 /* FirebasexCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebasexCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3431CF5226A66CDC00F8F571 /* FirebasexCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasexCombineApp.swift; sourceTree = "<group>"; };
+		3431CF5626A66CED00F8F571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3431CF5926A66CED00F8F571 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3431CF5B26A66CED00F8F571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3431CF6026A66CEE00F8F571 /* FirebasexCombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebasexCombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3431CF6426A66CEE00F8F571 /* FirebasexCombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasexCombineTests.swift; sourceTree = "<group>"; };
+		3431CF6626A66CEE00F8F571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3431CF6B26A66CEE00F8F571 /* FirebasexCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebasexCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3431CF6F26A66CEE00F8F571 /* FirebasexCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasexCombineUITests.swift; sourceTree = "<group>"; };
+		3431CF7126A66CEE00F8F571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3431CF7D26A672DF00F8F571 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		3431CF8126A67A6100F8F571 /* SubjectBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectBinding.swift; sourceTree = "<group>"; };
+		3431CF8426A67AAF00F8F571 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		3431CF8626A68D4F00F8F571 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		3493D19C26A6E4910078D932 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		34B0562C26A708C000DF33E9 /* FireBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseService.swift; sourceTree = "<group>"; };
+		34B0562F26A70A1B00DF33E9 /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
+		34B0563126A7210700DF33E9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		34B0563326A7212F00DF33E9 /* ListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUseCase.swift; sourceTree = "<group>"; };
+		34F8BF5A26A6D2CA003165E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4B7858E3C1A3A840B7CA13FD /* Pods_FirebasexCombine_FirebasexCombineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebasexCombine_FirebasexCombineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9EAA1715D0183C86025887 /* Pods-FirebasexCombine-FirebasexCombineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasexCombine-FirebasexCombineUITests.debug.xcconfig"; path = "Target Support Files/Pods-FirebasexCombine-FirebasexCombineUITests/Pods-FirebasexCombine-FirebasexCombineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		600D5CF23C410AD8579A730D /* Pods_FirebasexCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebasexCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0D306A55DAF561AE6852AB /* Pods-FirebasexCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasexCombine.debug.xcconfig"; path = "Target Support Files/Pods-FirebasexCombine/Pods-FirebasexCombine.debug.xcconfig"; sourceTree = "<group>"; };
+		892820D86D1FE71DAF8C3822 /* Pods-FirebasexCombine-FirebasexCombineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasexCombine-FirebasexCombineUITests.release.xcconfig"; path = "Target Support Files/Pods-FirebasexCombine-FirebasexCombineUITests/Pods-FirebasexCombine-FirebasexCombineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8ED0B253EE41F5D45507CE06 /* Pods-FirebasexCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasexCombine.release.xcconfig"; path = "Target Support Files/Pods-FirebasexCombine/Pods-FirebasexCombine.release.xcconfig"; sourceTree = "<group>"; };
+		A488ED4C92A0C1A6671B2D57 /* Pods-FirebasexCombineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasexCombineTests.release.xcconfig"; path = "Target Support Files/Pods-FirebasexCombineTests/Pods-FirebasexCombineTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBE435682828D5DE8401110C /* Pods-FirebasexCombineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebasexCombineTests.debug.xcconfig"; path = "Target Support Files/Pods-FirebasexCombineTests/Pods-FirebasexCombineTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3431CF4C26A66CDC00F8F571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8F6E07B93D7CBE6557D1B2 /* Pods_FirebasexCombine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3431CF5D26A66CEE00F8F571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CFCA3C7BF158E4E8904948 /* Pods_FirebasexCombineTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3431CF6826A66CEE00F8F571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B2DD37439A57DB9563C19E /* Pods_FirebasexCombine_FirebasexCombineUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3431CF4626A66CDC00F8F571 = {
+			isa = PBXGroup;
+			children = (
+				3431CF5126A66CDC00F8F571 /* FirebasexCombine */,
+				3431CF6326A66CEE00F8F571 /* FirebasexCombineTests */,
+				3431CF6E26A66CEE00F8F571 /* FirebasexCombineUITests */,
+				3431CF5026A66CDC00F8F571 /* Products */,
+				3DABD3F26088918BBB332B8B /* Pods */,
+				572879F2001D7A43BE505A31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3431CF5026A66CDC00F8F571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF4F26A66CDC00F8F571 /* FirebasexCombine.app */,
+				3431CF6026A66CEE00F8F571 /* FirebasexCombineTests.xctest */,
+				3431CF6B26A66CEE00F8F571 /* FirebasexCombineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3431CF5126A66CDC00F8F571 /* FirebasexCombine */ = {
+			isa = PBXGroup;
+			children = (
+				34B0562E26A709FF00DF33E9 /* Repository */,
+				34B0562B26A708AA00DF33E9 /* Services */,
+				34F8BF5A26A6D2CA003165E0 /* GoogleService-Info.plist */,
+				3431CF5226A66CDC00F8F571 /* FirebasexCombineApp.swift */,
+				3431CF5626A66CED00F8F571 /* Assets.xcassets */,
+				3431CF5B26A66CED00F8F571 /* Info.plist */,
+				3431CF5826A66CED00F8F571 /* Preview Content */,
+				3493D19B26A6E4640078D932 /* Model */,
+				3431CF8026A672FA00F8F571 /* Screens */,
+				3431CF8326A67A6A00F8F571 /* Utils */,
+			);
+			path = FirebasexCombine;
+			sourceTree = "<group>";
+		};
+		3431CF5826A66CED00F8F571 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF5926A66CED00F8F571 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3431CF6326A66CEE00F8F571 /* FirebasexCombineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF6426A66CEE00F8F571 /* FirebasexCombineTests.swift */,
+				3431CF6626A66CEE00F8F571 /* Info.plist */,
+			);
+			path = FirebasexCombineTests;
+			sourceTree = "<group>";
+		};
+		3431CF6E26A66CEE00F8F571 /* FirebasexCombineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF6F26A66CEE00F8F571 /* FirebasexCombineUITests.swift */,
+				3431CF7126A66CEE00F8F571 /* Info.plist */,
+			);
+			path = FirebasexCombineUITests;
+			sourceTree = "<group>";
+		};
+		3431CF7F26A672ED00F8F571 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF7D26A672DF00F8F571 /* ListView.swift */,
+				3431CF8626A68D4F00F8F571 /* ListCell.swift */,
+				34B0563126A7210700DF33E9 /* ListViewModel.swift */,
+				34B0563326A7212F00DF33E9 /* ListUseCase.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		3431CF8026A672FA00F8F571 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF7F26A672ED00F8F571 /* List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3431CF8326A67A6A00F8F571 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3431CF8126A67A6100F8F571 /* SubjectBinding.swift */,
+				3431CF8426A67AAF00F8F571 /* BaseViewModel.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3493D19B26A6E4640078D932 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3493D19C26A6E4910078D932 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34B0562B26A708AA00DF33E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				34B0562C26A708C000DF33E9 /* FireBaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		34B0562E26A709FF00DF33E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				34B0562F26A70A1B00DF33E9 /* NoteRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3DABD3F26088918BBB332B8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D306A55DAF561AE6852AB /* Pods-FirebasexCombine.debug.xcconfig */,
+				8ED0B253EE41F5D45507CE06 /* Pods-FirebasexCombine.release.xcconfig */,
+				5E9EAA1715D0183C86025887 /* Pods-FirebasexCombine-FirebasexCombineUITests.debug.xcconfig */,
+				892820D86D1FE71DAF8C3822 /* Pods-FirebasexCombine-FirebasexCombineUITests.release.xcconfig */,
+				DBE435682828D5DE8401110C /* Pods-FirebasexCombineTests.debug.xcconfig */,
+				A488ED4C92A0C1A6671B2D57 /* Pods-FirebasexCombineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		572879F2001D7A43BE505A31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				600D5CF23C410AD8579A730D /* Pods_FirebasexCombine.framework */,
+				4B7858E3C1A3A840B7CA13FD /* Pods_FirebasexCombine_FirebasexCombineUITests.framework */,
+				1BBB69A3E5CCDB8AD252BDE3 /* Pods_FirebasexCombineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3431CF4E26A66CDC00F8F571 /* FirebasexCombine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3431CF7426A66CEE00F8F571 /* Build configuration list for PBXNativeTarget "FirebasexCombine" */;
+			buildPhases = (
+				FDD91DD86B5DC1E9326E70C9 /* [CP] Check Pods Manifest.lock */,
+				3431CF4B26A66CDC00F8F571 /* Sources */,
+				3431CF4C26A66CDC00F8F571 /* Frameworks */,
+				3431CF4D26A66CDC00F8F571 /* Resources */,
+				DCD64F99E03561086BD3B6B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirebasexCombine;
+			productName = FirebasexCombine;
+			productReference = 3431CF4F26A66CDC00F8F571 /* FirebasexCombine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3431CF5F26A66CEE00F8F571 /* FirebasexCombineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3431CF7726A66CEE00F8F571 /* Build configuration list for PBXNativeTarget "FirebasexCombineTests" */;
+			buildPhases = (
+				5AABAB7BC7E9AD1DE695BF71 /* [CP] Check Pods Manifest.lock */,
+				3431CF5C26A66CEE00F8F571 /* Sources */,
+				3431CF5D26A66CEE00F8F571 /* Frameworks */,
+				3431CF5E26A66CEE00F8F571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3431CF6226A66CEE00F8F571 /* PBXTargetDependency */,
+			);
+			name = FirebasexCombineTests;
+			productName = FirebasexCombineTests;
+			productReference = 3431CF6026A66CEE00F8F571 /* FirebasexCombineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3431CF6A26A66CEE00F8F571 /* FirebasexCombineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3431CF7A26A66CEE00F8F571 /* Build configuration list for PBXNativeTarget "FirebasexCombineUITests" */;
+			buildPhases = (
+				EF2A654678D8987900C1E8E3 /* [CP] Check Pods Manifest.lock */,
+				3431CF6726A66CEE00F8F571 /* Sources */,
+				3431CF6826A66CEE00F8F571 /* Frameworks */,
+				3431CF6926A66CEE00F8F571 /* Resources */,
+				12756670B49197599521A1D7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3431CF6D26A66CEE00F8F571 /* PBXTargetDependency */,
+			);
+			name = FirebasexCombineUITests;
+			productName = FirebasexCombineUITests;
+			productReference = 3431CF6B26A66CEE00F8F571 /* FirebasexCombineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3431CF4726A66CDC00F8F571 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3431CF4E26A66CDC00F8F571 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3431CF5F26A66CEE00F8F571 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3431CF4E26A66CDC00F8F571;
+					};
+					3431CF6A26A66CEE00F8F571 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3431CF4E26A66CDC00F8F571;
+					};
+				};
+			};
+			buildConfigurationList = 3431CF4A26A66CDC00F8F571 /* Build configuration list for PBXProject "FirebasexCombine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3431CF4626A66CDC00F8F571;
+			productRefGroup = 3431CF5026A66CDC00F8F571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3431CF4E26A66CDC00F8F571 /* FirebasexCombine */,
+				3431CF5F26A66CEE00F8F571 /* FirebasexCombineTests */,
+				3431CF6A26A66CEE00F8F571 /* FirebasexCombineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3431CF4D26A66CDC00F8F571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3431CF5A26A66CED00F8F571 /* Preview Assets.xcassets in Resources */,
+				3431CF5726A66CED00F8F571 /* Assets.xcassets in Resources */,
+				34F8BF5B26A6D2CA003165E0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3431CF5E26A66CEE00F8F571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3431CF6926A66CEE00F8F571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12756670B49197599521A1D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebasexCombine-FirebasexCombineUITests/Pods-FirebasexCombine-FirebasexCombineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebasexCombine-FirebasexCombineUITests/Pods-FirebasexCombine-FirebasexCombineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebasexCombine-FirebasexCombineUITests/Pods-FirebasexCombine-FirebasexCombineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AABAB7BC7E9AD1DE695BF71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebasexCombineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD64F99E03561086BD3B6B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebasexCombine/Pods-FirebasexCombine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebasexCombine/Pods-FirebasexCombine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebasexCombine/Pods-FirebasexCombine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF2A654678D8987900C1E8E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebasexCombine-FirebasexCombineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD91DD86B5DC1E9326E70C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebasexCombine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3431CF4B26A66CDC00F8F571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3431CF7E26A672DF00F8F571 /* ListView.swift in Sources */,
+				3431CF8526A67AAF00F8F571 /* BaseViewModel.swift in Sources */,
+				34B0562D26A708C000DF33E9 /* FireBaseService.swift in Sources */,
+				34B0563426A7212F00DF33E9 /* ListUseCase.swift in Sources */,
+				3493D19D26A6E4910078D932 /* Note.swift in Sources */,
+				3431CF5326A66CDC00F8F571 /* FirebasexCombineApp.swift in Sources */,
+				34B0563226A7210700DF33E9 /* ListViewModel.swift in Sources */,
+				34B0563026A70A1B00DF33E9 /* NoteRepository.swift in Sources */,
+				3431CF8726A68D4F00F8F571 /* ListCell.swift in Sources */,
+				3431CF8226A67A6100F8F571 /* SubjectBinding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3431CF5C26A66CEE00F8F571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3431CF6526A66CEE00F8F571 /* FirebasexCombineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3431CF6726A66CEE00F8F571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3431CF7026A66CEE00F8F571 /* FirebasexCombineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3431CF6226A66CEE00F8F571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3431CF4E26A66CDC00F8F571 /* FirebasexCombine */;
+			targetProxy = 3431CF6126A66CEE00F8F571 /* PBXContainerItemProxy */;
+		};
+		3431CF6D26A66CEE00F8F571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3431CF4E26A66CDC00F8F571 /* FirebasexCombine */;
+			targetProxy = 3431CF6C26A66CEE00F8F571 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3431CF7226A66CEE00F8F571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3431CF7326A66CEE00F8F571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3431CF7526A66CEE00F8F571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0D306A55DAF561AE6852AB /* Pods-FirebasexCombine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FirebasexCombine/Preview Content\"";
+				DEVELOPMENT_TEAM = D2Q8VQ7WJZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FirebasexCombine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HuyThanDuc.FirebasexCombine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3431CF7626A66CEE00F8F571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED0B253EE41F5D45507CE06 /* Pods-FirebasexCombine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FirebasexCombine/Preview Content\"";
+				DEVELOPMENT_TEAM = D2Q8VQ7WJZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FirebasexCombine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HuyThanDuc.FirebasexCombine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3431CF7826A66CEE00F8F571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE435682828D5DE8401110C /* Pods-FirebasexCombineTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2Q8VQ7WJZ;
+				INFOPLIST_FILE = FirebasexCombineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HuyThanDuc.FirebasexCombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebasexCombine.app/FirebasexCombine";
+			};
+			name = Debug;
+		};
+		3431CF7926A66CEE00F8F571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A488ED4C92A0C1A6671B2D57 /* Pods-FirebasexCombineTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2Q8VQ7WJZ;
+				INFOPLIST_FILE = FirebasexCombineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HuyThanDuc.FirebasexCombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebasexCombine.app/FirebasexCombine";
+			};
+			name = Release;
+		};
+		3431CF7B26A66CEE00F8F571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9EAA1715D0183C86025887 /* Pods-FirebasexCombine-FirebasexCombineUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2Q8VQ7WJZ;
+				INFOPLIST_FILE = FirebasexCombineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HuyThanDuc.FirebasexCombineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FirebasexCombine;
+			};
+			name = Debug;
+		};
+		3431CF7C26A66CEE00F8F571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892820D86D1FE71DAF8C3822 /* Pods-FirebasexCombine-FirebasexCombineUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2Q8VQ7WJZ;
+				INFOPLIST_FILE = FirebasexCombineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HuyThanDuc.FirebasexCombineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FirebasexCombine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3431CF4A26A66CDC00F8F571 /* Build configuration list for PBXProject "FirebasexCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3431CF7226A66CEE00F8F571 /* Debug */,
+				3431CF7326A66CEE00F8F571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3431CF7426A66CEE00F8F571 /* Build configuration list for PBXNativeTarget "FirebasexCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3431CF7526A66CEE00F8F571 /* Debug */,
+				3431CF7626A66CEE00F8F571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3431CF7726A66CEE00F8F571 /* Build configuration list for PBXNativeTarget "FirebasexCombineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3431CF7826A66CEE00F8F571 /* Debug */,
+				3431CF7926A66CEE00F8F571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3431CF7A26A66CEE00F8F571 /* Build configuration list for PBXNativeTarget "FirebasexCombineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3431CF7B26A66CEE00F8F571 /* Debug */,
+				3431CF7C26A66CEE00F8F571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3431CF4726A66CDC00F8F571 /* Project object */;
+}
